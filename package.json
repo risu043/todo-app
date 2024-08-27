@@ -1,0 +1,28 @@
+{
+  "name": "todo_app_react",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "start": "npm run start -w front",
+    "watch": "npm run watch -w front",
+    "test": "npm run test -w e2e",
+    "test:sign_in": "npm run test:sign_in -w e2e",
+    "lint:check": "npm run lint:check --ws",
+    "lint:fix": "npm run lint:fix --ws",
+    "format:check": "npm run format:check --ws",
+    "format:fix": "npm run format:fix --ws",
+    "typecheck": "npm run typecheck --ws",
+    "check_puppeteer": "npm run check_puppeteer -w e2e"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.3"
+  },
+  "workspaces": [
+    "e2e",
+    "front"
+  ]
+}
